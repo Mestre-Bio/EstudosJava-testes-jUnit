@@ -76,5 +76,15 @@ public class LeilaoTest {
 
 		assertEquals(40, leilao.getLances().get(2).getValor());
 	}
+	
+	@Test
+	public void naoDeveDobrarCasoNaoHajaLanceAnterior() {
+		Leilao leilao = new Leilao("Vassoura amaldicoada");
+		Usuario bruxaVeia = new Usuario("Bruxa Velha");
+		
+		leilao.dobraLance(bruxaVeia);
+		
+		assertEquals(0, leilao.getLances().size());
+	}
 
 }

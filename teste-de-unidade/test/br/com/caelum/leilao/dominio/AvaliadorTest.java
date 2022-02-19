@@ -1,15 +1,10 @@
-package br.com.caelm.leilao.dominio;
-
-import org.junit.jupiter.api.Test;
+package br.com.caelum.leilao.dominio;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import br.com.caelum.leilao.dominio.Avaliador;
-import br.com.caelum.leilao.dominio.Lance;
-import br.com.caelum.leilao.dominio.Leilao;
-import br.com.caelum.leilao.dominio.Usuario;
+import org.junit.jupiter.api.Test;
 
 public class AvaliadorTest {
 	Usuario joao = new Usuario("João");
